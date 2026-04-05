@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,9 +13,13 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata: Metadata = {
-  title: "Nursey | Quality Care for Your Loved Ones",
-  description: "Modern Geriatric Care specialist offering home care, medical support, and customized care plans.",
+  title: {
+    template: "%s - Careplus - Oiza",
+    default: "Quality Care for Your Loved Ones",
+  },
+  description: "Modern Geriatric Care specialist offering home care, medical support, and customized care plans."
 };
 
 export default function RootLayout({
@@ -27,7 +32,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable}`}
     >
-      <body>{children}</body>
+      <body>
+        {children}
+        <WhatsAppButton />
+      </body>
     </html>
   );
 }
