@@ -376,6 +376,10 @@ img {
   margin-bottom: 24px;
 }
 
+.footer-col-brand {
+  grid-column: span 2;
+}
+
 .footer-link {
   display: block;
   color: #cbd5e1;
@@ -411,5 +415,9 @@ img {
   
   .nav-links {
     display: none; /* simple mobile styling for now */
+  }
+  
+  .footer-col-brand {
+    grid-column: span 1;
   }
 }

@@ -16,7 +16,7 @@ export default function About() {
         <div>
           <h2 className="section-title" style={{ textAlign: "left" }}>Dedicated to Golden Years</h2>
           <p style={{ color: "var(--color-text-muted)", fontSize: "1.25rem", marginBottom: "24px" }}>
-            With over 15 years of experience in geriatric medicine, Doctor Sarah Williams understands the unique health challenges faced by seniors. Our clinic combines high-quality medical expertise with a warm, empathetic approach, ensuring your parents receive the comfort and dignity they deserve.
+            With over 15 years of experience in geriatric medicine, Doctor Oiza  understands the unique health challenges faced by seniors. Our clinic combines high-quality medical expertise with a warm, empathetic approach, ensuring your parents receive the comfort and dignity they deserve.
           </p>
           <div className="about-features">
             <div className="feature-item">
